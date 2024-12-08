@@ -20,8 +20,8 @@ async function summarizePageContent(pageContent, sendResponse) {
             }
         ];
 
-        const endpoint = "https://ragresume.openai.azure.com/openai/deployments/gpt-35-turbo/chat/completions?api-version=2023-05-15";
-        const api_key = "CGkgIclvaY0fdnq6eQUaLuBeZgeWspqSf4hhD8ohh7mf7zMCQb2SJQQJ99AKACYeBjFXJ3w3AAABACOG1etF";
+        const endpoint = "YOUR-OPENAI-ENDPOINT";
+        const api_key = "YOUR-OPENAI-API-KEY";
 
         // Call your Azure OpenAI endpoint to generate a summary
         const response = await fetch(endpoint, {
