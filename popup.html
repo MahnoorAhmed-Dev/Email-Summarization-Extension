@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Email Summarizer</title>
+    <style>
+      body {
+    font-family: Arial, sans-serif white;
+    font-size:large;
+    margin: 0;
+    padding: 20px;
+    background-color: rgb(167, 197, 211);
+    max-width: 500px; /* Flexible width for better display */
+    margin: auto;
+    
+    box-sizing: border-box; /* Ensures borders and padding are included in width */
+}
+
+#summarizeButton {
+    width: 300px;
+    padding: 15px;
+    background-color: #5186e1;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#summaryOutput {
+    margin-top: 10px;
+    white-space: pre-wrap; /* Preserve formatting */
+    word-wrap: break-word;
+    background-color: #f4f4f4;
+    padding: 15px;
+    border-radius: 5px;
+    border: 1px solid #6680d5; /* Reduced border for better fit */
+    max-height: 300px; /* Adds a scrollable area */
+    overflow-y: auto; /* Scroll if the content is too long */
+    box-sizing: border-box; /* Considers padding/border */
+    line-height: 1.5; /* Adjusted line height for more space between lines */
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    body {
+        padding: 15px;
+    }
+
+    #summaryOutput {
+        max-height: 250px;
+    }
+}
+
+/* Additional Styling for Desired Layout */
+#summaryOutput {
+    width: 300px; /* Adjust width as needed */
+    margin: 0 auto; /* Center the output */
+}
+
+h1 {
+    color: rgb(38, 88, 195); /* Set the font color to white */
+}
+
+    </style>
+    <script src="popup.js" defer></script>
+</head>
+<body>
+    <h1>Email Summarizer</h1>
+    <button id="summarizeButton">Summarize Email</button>
+    <pre id="summaryOutput"></pre>
+</body>
+</html>
